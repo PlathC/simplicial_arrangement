@@ -45,7 +45,7 @@ if (SIMPLICIAL_ARRANGEMENT_NON_ROBUST)
         -DSIMPLICIAL_ARRANGEMENT_NON_ROBUST)
 endif()
 if (NOT MSVC)
-    target_compile_options(simplicial_arrangement PRIVATE "-Wall" "-Werror")
+    target_compile_options(simplicial_arrangement PRIVATE "-Wall")
 endif()
 add_library(simplicial_arrangement::simplicial_arrangement ALIAS
     simplicial_arrangement)
